@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mouse traking</title>
+</head>
+<body> 
+  <!--<script type="text/javascript" src="jquery-2.2.2.min.js"></script>  -->
+  <input id='x' type=text><br>
+  <input id='y' type=text>
+  <script>
+     function mouseMove(ev) {
+        Ev = ev || window.event;
+        document.getElementById("x").value = Ev.screenX;
+        document.getElementById("y").value = Ev.screenY;
+    }
+    document.onmousemove = mouseMove;
+   </script>
+</body>
+</html>
